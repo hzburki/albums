@@ -1,16 +1,15 @@
 import React from 'react';
-import { Text } from 'react-native';
-
-import Card from './Card';
+import { View, Text } from 'react-native';
 
 const AlbumDetail = (props) => {
-  console.log('AlbumDetail');
+  console.log('Inside AlbumDetail');
+  console.log(props);
 
   return (
-    <Card>
-      <Text>{props.album.title}</Text>
-    </Card>
- );
+    <View>
+      <Text>{props.alnum.title}</Text>
+    </View>
+  );
 };
 
 export default AlbumDetail;
